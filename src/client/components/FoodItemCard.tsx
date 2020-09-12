@@ -13,13 +13,14 @@ interface Props {
 
 const FoodItemCard: React.FC<Props> = ({ dietaries, itemId, name, onClick, onClose }) => {
   const handleClick = () => {
+    if (!onClick) return
+
     const item: IFoodItem = {
       dietaries,
       id: itemId,
       name,
     }
-
-    if (onClick) onClick(item)
+    onClick(item)
   }
 
   const handleClose = () => {
