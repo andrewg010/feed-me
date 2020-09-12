@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     id: 1001,
     name: 'Kale Caesar Pasta, Turmeric Satay Broccoli & Lemon Cashew Greens',
@@ -99,4 +99,4 @@ module.exports = [
     name: 'Mangajo Acai',
     dietaries: ['ve', 'v', 'gf'],
   },
-];
+]
